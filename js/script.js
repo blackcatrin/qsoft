@@ -2,6 +2,13 @@
 
 // more text
 $(function() {
+	
+	if (document.all && document.querySelector && !document.addEventListener) {
+		$('body').addClass('ie8');
+	}
+
+});
+$(function() {
 	var $eventList = $('.more_txt a');
 	if (!$eventList.length) return;
     $(document).on('click', '.more_txt a', function(e) {

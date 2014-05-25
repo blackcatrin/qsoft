@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Рога & Сила. Продажа автомобилей.</title>
+
+	<link rel="stylesheet" href="css/screen.css">
+
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+	<script type='text/javascript' src='js/ui/jquery-ui-1.10.4.custom.min.js'></script>
+	<script type='text/javascript' src='js/script.js'></script>
+</head>	
+<body>
+<div class="wrapper">
+	<!-- header -->
+	<div class="header">
+		<div class="header__top_panel gray_bottom">
+			<div class="c_block">
+				<a href="#" class="btn_menu">Меню</a>
+				<div class="logo">Рога<span>&</span>Сила</div>
+				<div class="top_basket ">
+					<div class="top_basket__count">0</div>
+					<button class="top_basket__btn btn_disabled" disabled>
+						<span class="btn__txt">Оформить заказ</span>
+						<span class="top_basket__count">0</span>
+					</button>
+				</div>
+				<div class="search search-top">
+					<input type="text" class="search__input" placeholder="Поиск по сайту">
+					<input type="submit" class="search__btn">
+				</div>
+			</div>
+		</div>
+		<div class="header__menu gray_bottom">
+			<div class="c_block">	
+				<a href="#" class="close_menu">Закрыть</a>
+				<div class="hide_ttl">КАТАЛОГ</div>			
+				<!-- menu -->
+				<div class="menu menu-top">
+					<ul>
+						<li class="menu__item menu__item-arr">
+							<a href="#" class="menu__link">Легковые</a>
+							<ul class="sub_menu">
+								<li class="menu__item"><a href="#" class="menu_link">Седаны</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Хетчбеки</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Универсалы</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Купе</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Родстеры</a></li>
+							</ul>
+						</li>
+						<li class="menu__item menu__item-arr">
+							<a href="#" class="menu__link">Внедорожники</a>
+							<ul class="sub_menu">
+								<li class="menu__item"><a href="#" class="menu_link">Седаны</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Хетчбеки</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Универсалы</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Купе</a></li>
+								<li class="menu__item"><a href="#" class="menu_link">Родстеры</a></li>
+							</ul>
+						</li>
+						<li class="menu__item"><a href="#" class="menu__link">Раритетные</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Распродажа</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Новинки</a></li>
+					</ul>
+				</div>
+				<!-- end menu -->
+				<div class="hide_ttl">Информация</div>	
+				<div class="menu_info menu_info-top">
+					<ul class="menu_info__list">
+						<li class="menu_info__item"><a href="#" class="invert">О компании</a></li>
+						<li class="menu_info__item"><a href="#" class="invert">Контактная информация</a></li>
+						<li class="menu_info__item"><a href="#" class="invert">Условия продаж</a></li>
+						<li class="menu_info__item"><a href="#" class="invert">Финансовый отдел</a></li>
+						<li class="menu_info__item"><a href="#" class="invert">Для клиентов</a></li>
+					</ul>
+				</div>
+				<div class="top_login">
+					<div class="top_login__info">Здравствуйте, <b>Иван Владимирович</b></div>
+					<a href="#" class="top_login__link link__cabinet">Личная информация</a>
+					<a href="#" class="top_login__link link__enter">Выйти</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ens header -->
+
+	<!-- content -->
+	<div class="content c_block">
+		<div class="breadcrumbs">
+			<a href="#" class="bread_link invert">Главная</a>
+		</div>
+		<h1 class="heading">Заголовок каталога</h1>
+		
+		<div class="filter_block_wrap">
+			<form action="#">
+	            <div class="filter_block">
+					<h3 class="filter_block__ttl">Коробка:</h3>                          
+					<ul class="filter_list">
+	                    <li class="filter_list__item"><input id="brend1" class="child" name="brends1[]" value="1" type="checkbox"><label for="brend1">Механическая</label></li>
+	                    <li class="filter_list__item"><input id="brend2" class="child" name="brends1[]" value="2" type="checkbox"><label for="brend2">Автоматическая</label></li>
+	                </ul>
+	            </div>
+	            <div class="filter_block filter_range">
+					<h3 class="filter_block__ttl">Стоимость:</h3>
+	                <div class="filter_block__slider">
+	                    <div class="filter_block__text">
+	                        <div class="row"><input type="text" id="amount" placeholder="от 0 руб."/> </div>
+	                        <div class="row"><input type="text" id="amount1" placeholder="до 10 000 000 руб."/> 
+	                        </div>
+	                    </div>
+	                    <div id="slider-range"></div>
+	                </div>
+	            </div>
+	            <div class="filter_block">
+					<h3 class="filter_block__ttl">Цвет:</h3>                          
+					<ul class="filter_list filter_list-min">
+	                    <li class="filter_list__item"><input id="brend3" class="child" name="brends2[]" value="1" type="checkbox"><label for="brend1">Красный</label></li>
+	                    <li class="filter_list__item"><input id="brend4" class="child" name="brends2[]" value="2" type="checkbox"><label for="brend2">Синий</label></li>
+	                    <li class="filter_list__item"><input id="brend5" class="child" name="brends2[]" value="3" type="checkbox"><label for="brend1">Желтый</label></li>
+	                    <li class="filter_list__item"><input id="brend6" class="child" name="brends2[]" value="4" type="checkbox"><label for="brend2">Зеленый</label></li>
+	                </ul>
+	            </div>
+			</form>
+		</div>
+		<!-- main_products -->
+		<div class="main_products catalog_list">
+			<div class="main_products__list">
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW X3 2.0d</span>
+					</a>
+					<div class="product_sale"><div class="product_sale-old">2 730 000 руб.</div> / 2 230 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-new">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">AUDI A6 3.0 TFSI</span>
+					</a>
+					<div class="product_sale">2 870 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-action">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">Mercedes-Benz A200</span>
+					</a>
+					<div class="product_sale">1 310 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW Z4 sDrive35i</span>
+					</a>
+					<div class="product_sale">3 532 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW X3 2.0d</span>
+					</a>
+					<div class="product_sale"><div class="product_sale-old">2 730 000 руб.</div> / 2 230 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-new">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">AUDI A6 3.0 TFSI</span>
+					</a>
+					<div class="product_sale">2 870 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-action">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">Mercedes-Benz A200</span>
+					</a>
+					<div class="product_sale">1 310 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW Z4 sDrive35i</span>
+					</a>
+					<div class="product_sale">3 532 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW X3 2.0d</span>
+					</a>
+					<div class="product_sale"><div class="product_sale-old">2 730 000 руб.</div> / 2 230 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-new">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">AUDI A6 3.0 TFSI</span>
+					</a>
+					<div class="product_sale">2 870 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-action">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">Mercedes-Benz A200</span>
+					</a>
+					<div class="product_sale">1 310 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW Z4 sDrive35i</span>
+					</a>
+					<div class="product_sale">3 532 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW X3 2.0d</span>
+					</a>
+					<div class="product_sale"><div class="product_sale-old">2 730 000 руб.</div> / 2 230 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-new">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">AUDI A6 3.0 TFSI</span>
+					</a>
+					<div class="product_sale">2 870 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-action">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">Mercedes-Benz A200</span>
+					</a>
+					<div class="product_sale">1 310 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW Z4 sDrive35i</span>
+					</a>
+					<div class="product_sale">3 532 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW X3 2.0d</span>
+					</a>
+					<div class="product_sale"><div class="product_sale-old">2 730 000 руб.</div> / 2 230 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-new">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">AUDI A6 3.0 TFSI</span>
+					</a>
+					<div class="product_sale">2 870 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item products__item-action">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">Mercedes-Benz A200</span>
+					</a>
+					<div class="product_sale">1 310 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+				<div class="main_products__item">
+					<a href="#" class="product_link invert">
+						<span class="product_img"><img src="img/files/im5.jpg" alt=""></span>
+						<span class="product_ttl">BMW Z4 sDrive35i</span>
+					</a>
+					<div class="product_sale">3 532 000 руб.</div>
+					<div class="product_btn"><input type="submit" class="btn_in_cart" value="В корзину"></div>
+				</div>
+			</div>
+		</div>
+		<div class="pager">
+			<ul class="pager_list">
+				<li><a href="#" class="page_arrow page_prev invert">&lt;</a></li>
+				<li><a href="#" class="page current_page invert">1</a></li>
+				<li><a href="#" class="page invert">2</a></li>
+				<li><a href="#" class="page invert">3</a></li>
+				<li><a href="#" class="page invert invert">4</a></li>
+				<li><a href="#" class="page invert">5</a></li>
+				<li><span class="page">...</span></li>
+				<li><a href="#" class="page invert">87</a></li>
+				<li><a href="#" class="page_arrow page_next invert">&gt;</a></li>
+			</ul>
+		</div>
+
+		<div class="main_contacts">
+			<div class="contact_ttl">
+				<h3 class="head_ttl">Наши салоны</h3>
+				<div class="more">/<a href="#" class="more__link">Все</a></div>
+			</div>	
+			<div class="contact__item">
+				<div class="contact__item_img"><img src="img/files/im6.jpg" alt=""></div>
+				<div class="contact__item_content">
+					<div class="contact__item_ttl"><a href="#" class="invert">Салон на братиславской</a></div>
+					<div class="contact__item_txt">Москва, ул. Братиславская, дом 23 (<a href="#">Схема</a>)</div>
+					<div class="contact__item_phone">+7 495 987 65 43</div>
+				</div>
+			</div>
+			<div class="contact__item">
+				<div class="contact__item_img"><img src="img/files/im6.jpg" alt=""></div>
+				<div class="contact__item_content">
+					<div class="contact__item_ttl"><a href="#" class="invert">Салон на братиславской</a></div>
+					<div class="contact__item_txt">Москва, ул. Братиславская, дом 23 (<a href="#">Схема</a>)</div>
+					<div class="contact__item_phone">+7 495 987 65 43</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu_info">
+			<div class="menu_info__ttl">Информация</div>
+			<ul class="menu_info__list">
+				<li class="menu_info__item"><a href="#" class="invert">О компании</a></li>
+				<li class="menu_info__item"><a href="#" class="invert">Контактная информация</a></li>
+				<li class="menu_info__item"><a href="#" class="invert">Условия продаж</a></li>
+				<li class="menu_info__item"><a href="#" class="invert">Финансовый отдел</a></li>
+				<li class="menu_info__item"><a href="#" class="invert">Для клиентов</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end content -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="c_block">
+			<div class="copyrights">
+				&copy; 2013 Рога & Сила. Продажа автомобилей.
+			</div>
+			<div class="made_in">
+				Сделано в <a href="#" target="_blank">Qsoft</a>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+</div>
+</body>
+</html>

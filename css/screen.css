@@ -52,7 +52,7 @@ body{
 	overflow-y: scroll;
 	background: url('../img/fon_body.png') repeat 0 0;
 	min-width: 320px;
-	-webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: none;
 }	
 .ie8{
 	min-width: 960px;

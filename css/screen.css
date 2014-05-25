@@ -49,12 +49,14 @@ body{
 	min-height: 100%;
 	position: relative;
 	width: 100%;
-	/*min-width: 1024px;*/
 	overflow-y: scroll;
 	background: url('../img/fon_body.png') repeat 0 0;
 	min-width: 320px;
+	-webkit-text-size-adjust: 100%;
 }	
-
+.ie8{
+	min-width: 960px;
+}
 *:focus {outline: none;}
 
 input::-moz-focus-inner{  /*Remove button padding in FF*/
@@ -584,6 +586,7 @@ p{margin: 0 0 25px;}
 			.product_btn{padding: 0 0 20px;}
 			.btn_in_cart:hover{background-color: #f60;}
 			.btn_in_cart{
+				-webkit-appearance: none;
 				min-width: 100px; 
 				height: 20px; 
 				color: #fff;
@@ -1112,6 +1115,8 @@ p{margin: 0 0 25px;}
 
 /* меньше 980 */
 @media only screen and (max-width: 960px){
+
+	body{background: #fff;}
 		
 		.header__top_panel{
 			padding: 40px 0 0;
@@ -1563,6 +1568,7 @@ p{margin: 0 0 25px;}
 	.main_products__item.products__item-action:after, 
 	.main_products__item.products__item-new:after{display: none;}
 
+	.main_products__item:last-child{width: auto; display: block;}
 	.catalog_list .main_products__item:last-child{width: auto; display: block;}
 	
 	.filter_block_wrap{padding: 0 20px;}
@@ -1586,7 +1592,7 @@ p{margin: 0 0 25px;}
 	.footer .c_block{
 		background: #fff;
 		border-top: 2px solid #ccc;
-		margin: 4px 0 0;
+		/*margin: 4px 0 0;*/
 		padding: 9px 0 21px;
 		text-align: center;; 
 	}

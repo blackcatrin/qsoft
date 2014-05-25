@@ -52,7 +52,7 @@ body{
 	overflow-y: scroll;
 	background: url('../img/fon_body.png') repeat 0 0;
 	min-width: 320px;
-	-webkit-text-size-adjust: 100%;
+	-webkit-text-size-adjust: none;
 }	
 .ie8{
 	min-width: 960px;
@@ -1443,8 +1443,8 @@ p{margin: 0 0 25px;}
 	.copyrights{padding: 0 0 0 15px;}
 	/*.made_in{width: 133px;}*/
 
-	.pager{font-size: 18px;line-height: 28px;}
-	.page_arrow{font-size: 22px;}
+	.pager{font-size: 16px;line-height: 28px;}
+	.page_arrow{font-size: 20px;}
 	.detail_block{
 		float: none;
 		border: none;
